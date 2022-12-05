@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/number1Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Enter a number"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColorHint="#B8B2B2"
+        app:layout_constraintBottom_toTopOf="@+id/number2Text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/number2Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:hint="Enter a number"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColorHint="#B8B2B2"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/number1Text"
+        app:layout_constraintTop_toBottomOf="@+id/number1Text" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="212dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="259dp"
+        android:text="Result: 0"
+        android:textAlignment="center"
+        android:textColor="#009688"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="242dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="31dp"
+        android:orientation="horizontal"
+        android:scrollbarSize="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/resultText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number2Text">
+
+        <Button
+            android:id="@+id/plusButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:onClick="plus"
+            android:shadowColor="#FFFFFF"
+            android:showDividers="middle"
+            android:text="+"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/minusButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:onClick="minus"
+            android:text="-"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/multButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:onClick="multiply"
+            android:text="*"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/divButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:onClick="divide"
+            android:text="/"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="28sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
