@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
 
     <EditText
@@ -16,6 +17,7 @@
         android:hint="Enter a number"
         android:inputType="number"
         android:minHeight="48dp"
+        android:textColor="#009688"
         android:textColorHint="#B8B2B2"
         app:layout_constraintBottom_toTopOf="@+id/number2Text"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,11 +28,12 @@
         android:id="@+id/number2Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="21dp"
+        android:layout_marginBottom="29dp"
         android:ems="10"
         android:hint="Enter a number"
         android:inputType="number"
         android:minHeight="48dp"
+        android:textColor="#009688"
         android:textColorHint="#B8B2B2"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintStart_toStartOf="@+id/number1Text"
@@ -38,13 +41,13 @@
 
     <TextView
         android:id="@+id/resultText"
-        android:layout_width="212dp"
+        android:layout_width="240dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="259dp"
+        android:layout_marginBottom="199dp"
         android:text="Result: 0"
         android:textAlignment="center"
         android:textColor="#009688"
-        android:textSize="20sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -53,11 +56,9 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="242dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="150dp"
-        android:layout_marginEnd="150dp"
-        android:layout_marginBottom="31dp"
+        android:layout_width="246dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="42dp"
         android:orientation="horizontal"
         android:scrollbarSize="4dp"
         app:layout_constraintBottom_toTopOf="@+id/resultText"
