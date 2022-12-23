@@ -1,3 +1,3 @@
-# AndroidProjects
+<h1 align="center"> AndroidProjects </h1>
 
-<span style="font-family:verdana">Codes I wrote while learning Android Development</span>
+##### Codes I wrote while learning Android Development
