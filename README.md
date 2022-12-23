@@ -1,2 +1,3 @@
 # AndroidProjects
-Projects I wrote while learning 𝒜ndrøid 𝒟eveløpment ❐
+
+<span style="font-family:verdana">Codes I wrote while learning Android Development</span>
