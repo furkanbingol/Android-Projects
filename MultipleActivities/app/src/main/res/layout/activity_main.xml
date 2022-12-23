@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="45dp"
+        android:text="FirstScreen"
+        android:textColor="#ff4757"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/inputText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="26dp"
+        android:onClick="changeActivity"
+        android:text="Change to 2nd"
+        app:layout_constraintEnd_toEndOf="@+id/inputText"
+        app:layout_constraintTop_toBottomOf="@+id/inputText" />
+
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:ems="10"
+        android:hint="Please enter a name"
+        android:inputType="textPersonName"
+        android:textColor="#ff6348"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
