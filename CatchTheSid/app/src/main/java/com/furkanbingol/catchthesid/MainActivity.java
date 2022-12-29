@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
                 int i = random.nextInt(9);
                 imageArray[i].setVisibility(View.VISIBLE);
 
-                handler.postDelayed(this, 600);   //0.6 sn
+                handler.postDelayed(this, 700);   //0.7 sn
             }
         };
 
